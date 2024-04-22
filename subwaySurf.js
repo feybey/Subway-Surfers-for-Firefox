@@ -15,7 +15,7 @@ function handleClick() {
   overlay.style.zIndex = "9999";
 
   var video = document.createElement("video");
-  video.src = "SubwaySurfing.mp4";
+  video.src = "video/SubwaySurfing.mp4";
   video.autoplay = true;
   video.controls = true;
 

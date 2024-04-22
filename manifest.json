@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "subwaySurfersFirefox",
-  "version": "1.0.11",
+  "version": "1.0",
 
   "description": "Adds subway surfers.",
 
@@ -16,5 +16,7 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*"]
+  "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*"],
+
+  "web_accessible_resources": ["video/SubwaySurfing.mp4"]
 }
