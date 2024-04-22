@@ -1,5 +1,7 @@
 // JavaScript
-window.onload = function () {
+
+browser.browserAction.onClicked.addListener(handleClick);
+function handleClick() {
   var overlay = document.createElement("div");
   overlay.style.position = "fixed";
   overlay.style.width = "100%";
@@ -23,4 +25,4 @@ window.onload = function () {
   video.onended = function () {
     document.body.removeChild(overlay);
   };
-};
+}
