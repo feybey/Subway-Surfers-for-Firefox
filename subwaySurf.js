@@ -1,7 +1,7 @@
 // JavaScript
 
-browser.browserAction.onClicked.addListener(handleClick);
 function handleClick() {
+  console.log("Button clicked, sending message to content script");
   var overlay = document.createElement("div");
   overlay.style.position = "fixed";
   overlay.style.width = "100%";
@@ -26,3 +26,5 @@ function handleClick() {
     document.body.removeChild(overlay);
   };
 }
+
+handleClick();
