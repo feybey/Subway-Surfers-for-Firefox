@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "subwaySurfersFirefox",
+  "version": "1.0",
+
+  "description": "Adds subway surfers.",
+
+  "icons": {
+    "48": "icons/surfingIcon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
